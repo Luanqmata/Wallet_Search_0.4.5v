@@ -1,5 +1,5 @@
-# WALLET SEARCH BTC With .GO
-## Programa que usa o maximo da sua CPU todos os processamentos 
-### garantido assim maior eficiencia. 65.536 possibilidades
+# CPU MINER 
+## Moldado para e5 2680 v4
+### Kit xeon
 
-![Animation](https://cointimes.com.br/wp-content/uploads/2021/05/gifdogecoinmining-300x169.gif)
+![Animation](https://meneguite.com/2017/10/01/golang-desbravando-uma-linguagem-de-programacao-parte-1/001.gif)
