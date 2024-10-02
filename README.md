@@ -7,7 +7,7 @@
 ## Notas
 ### V0.3.9 ,Melhoria na temperatuda do processador ,mudança na configuração da bios da x99 
 
-![image](https://github.com/user-attachments/assets/6b22654a-0844-4e1c-bf80-c2a8bdf55a02)
+![image](https://github.com/user-attachments/assets/cf3ef771-d781-40cd-9688-c9f53bd04efc)
 
 ### V0.4.5 , Adição dos ranges leitura de arquivo txt , reconhecimento de CPU , mudança na função gerador de chaves . adição das 160 carteiras do desafio , automatização na procura das carteiras 
 ## maxima de 470k de chaves por segundo.
