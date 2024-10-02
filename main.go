@@ -11,6 +11,8 @@ import (
 	"strings"
 	"sync"
 	"time"
+
+	"github.com/shirou/gopsutil/v3/cpu"
 )
 
 const (
@@ -90,6 +92,8 @@ func worker(id int) {
 		mu.Lock()
 		contador++
 		ultimaChaveGerada = chave
+		//fmt.Print("\n", ultimaChaveGerada) // ver as chaves geradas
+		//fmt.Print("\n", address) // ver os endereços das chaves geradas
 		if address == carteira_escolhida {
 			fmt.Printf("\n\n	|--------------%s----------------|\n", address)
 			fmt.Printf("	|----------------------ATENÇÃO-PRIVATE-KEY-----------------------|")
@@ -116,6 +120,16 @@ func main() {
 									    -_~ :Carteira Puzzle: ~_-
 	`)
 
+	// Obter o número de CPUs disponíveis e o nome do processador
+	numCPUs := runtime.NumCPU()
+	cpuInfo, _ := cpu.Info()
+	cpuModelName := "Desconhecido"
+	if len(cpuInfo) > 0 {
+		cpuModelName = cpuInfo[0].ModelName
+	}
+	fmt.Printf("\n	Obs: O Seu Computador tem %d threads. (Processador: %s)\n", numCPUs, cpuModelName)
+
+	//---------------------------------------------------------------------------
 	fmt.Print("\n\nDigite qual Carteira você vai querer procurar: ")
 	var escolha_carteira_chave int
 	fmt.Scanln(&escolha_carteira_chave)
@@ -136,8 +150,9 @@ func main() {
 		return
 	}
 
+	//----------------------------------------------------------------------------
+
 	time.Sleep(1 * time.Second)
-	fmt.Println("\n\n	Obs: Computador do criador tem 28 threads... (Processador Intel® Xeon® E5-2680 v4)")
 	fmt.Println("\n\n\n						- Random Mode -")
 
 	fmt.Println("\n\n		Modo 1: Easy   (15%) - CPU 60°C - 125 RPM  - 86k  Chaves P/seg")
@@ -151,11 +166,11 @@ func main() {
 
 	fmt.Print("\n\n Input: Escolha o modo de acordo com o número correspondente: ")
 
-	var escolha int
-	fmt.Scanln(&escolha)
+	var escolha_modo int
+	fmt.Scanln(&escolha_modo)
 
 	var numThreads int
-	switch escolha {
+	switch escolha_modo {
 	case 1:
 		numThreads = 3
 	case 2:
@@ -172,11 +187,11 @@ func main() {
 		fmt.Println("	Escolha inválida. Usando o SECURE MODE...  (20%) - CPU 58°C - 117K Chaves P/seg.")
 		numThreads = 4
 	}
-	fmt.Printf("\n  		Threads: %d iniciando .", numThreads)
+	fmt.Printf("\r\n\n  		Threads: %d iniciando .", numThreads)
 	time.Sleep(1 * time.Second)
-	fmt.Printf("\n  		Threads: %d iniciando ..", numThreads)
+	fmt.Printf("\r  		Threads: %d iniciando ..", numThreads)
 	time.Sleep(1 * time.Second)
-	fmt.Printf("\n  		Threads: %d iniciando ...\n\n", numThreads)
+	fmt.Printf("\r  		Threads: %d iniciando ...\n\n", numThreads)
 	time.Sleep(1 * time.Second)
 
 	runtime.GOMAXPROCS(numThreads)
@@ -187,7 +202,7 @@ func main() {
 		wg.Add(1)
 		go worker(i)
 	}
-
+	//----------------------------------------------------------------------------
 	go func() {
 		for {
 			time.Sleep(1 * time.Second)
@@ -203,7 +218,7 @@ func main() {
 			mu.Unlock()
 		}
 	}()
-
+	//-----------------------------------------------------------------------------
 	wg.Wait()
 
 	fmt.Print("	|--------------------------------------------------by-Luan-BSC---|")
