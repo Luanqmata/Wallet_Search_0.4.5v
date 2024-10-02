@@ -10,6 +10,6 @@
 ![image](https://github.com/user-attachments/assets/cf3ef771-d781-40cd-9688-c9f53bd04efc)
 
 ### V0.4.5 , Adição dos ranges leitura de arquivo txt , reconhecimento de CPU , mudança na função gerador de chaves . adição das 160 carteiras do desafio , automatização na procura das carteiras 
-## maxima de 470k de chaves por segundo.
+## maxima de 470k de chaves por segundo. (na carteira 67 (bits))
 
 ![image](https://github.com/user-attachments/assets/bd625d5f-e0df-4edd-89f5-c4aacc54d559)
