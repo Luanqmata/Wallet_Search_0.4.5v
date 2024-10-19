@@ -19,5 +19,7 @@
 
 ![image](https://github.com/user-attachments/assets/8764f071-f2d7-4f46-a63f-97f035e68480)
 
-## prox versão será adicionado mais um metodo de geração de chaves nao será aleatorio , ele vai pegar o range dividir em blocos (de acordo com a qnt que o user escolher) e dai ele vai fazer uma pergunta pro user
+
+# ~ PROX VERSÂO ~
+## será adicionado mais um metodo de geração de chaves nao será aleatorio , ele vai pegar o range dividir em blocos (de acordo com a qnt que o user escolher) e dai ele vai fazer uma pergunta pro user
 ## qual bloco quer ser minerado daquele range , e o user pode escolher começar do inicio até o fim ou do fim até o inicio , e tambem criar o metodo random dentro desses blocos .
