@@ -13,3 +13,11 @@
 ## maxima de 470k de chaves por segundo. (na carteira 67 (bits))
 
 ![image](https://github.com/user-attachments/assets/82f2dc08-a945-42c7-b3a8-1f2b75bee607)
+
+### v0.5 , Melhoria na geração de chaves , e organização no codigo , otmização na parte de menu , criada uma pasta com nome style para a comunicação do usuario com o programa , e alteração do visual mais facil .
+### Adição tambem de um arquivo para salvar as chaves encontradas quando ela for encontrada 
+
+![image](https://github.com/user-attachments/assets/8764f071-f2d7-4f46-a63f-97f035e68480)
+
+## prox versão será adicionado mais um metodo de geração de chaves nao será aleatorio , ele vai pegar o range dividir em blocos (de acordo com a qnt que o user escolher) e dai ele vai fazer uma pergunta pro user
+## qual bloco quer ser minerado daquele range , e o user pode escolher começar do inicio até o fim ou do fim até o inicio , e tambem criar o metodo random dentro desses blocos .
