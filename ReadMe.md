@@ -21,5 +21,5 @@
 ### (No kali_linux o programa rodou com mais +20k de chaves de desempenho carteira 67 Bits.)
 
 # ~ PROX VERSÃO ~
-## será adicionado mais um metodo de geração de chaves nao será aleatorio , ele vai pegar o range dividir em blocos (de acordo com a qnt que o user escolher) e dai ele vai fazer uma pergunta pro user
-## qual bloco quer ser minerado daquele range , e o user pode escolher começar do inicio até o fim ou do fim até o inicio , e tambem criar o metodo random dentro desses blocos .
+## 1° será adicionado mais um metodo de geração de chaves nao será aleatorio , ele vai pegar o range dividir em blocos (de acordo com a qnt que o user escolher) e dai ele vai fazer uma pergunta pro user qual bloco quer ser minerado daquele range , e o user pode escolher começar do inicio até o fim ou do fim até o inicio , e tambem criar o metodo random dentro desses blocos .
+
