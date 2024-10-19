@@ -1,4 +1,4 @@
-module meugo
+module wallet_search
 
 go 1.22.3
 
