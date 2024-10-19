@@ -4,7 +4,7 @@ package encoding
 import (
 	"crypto/sha256"
 	"encoding/hex"
-	"meugo/crypto/base58" 
+	"wallet_search/crypto/base58" 
 
 	"github.com/btcsuite/btcd/btcec"
 	"golang.org/x/crypto/ripemd160"
