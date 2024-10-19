@@ -17,8 +17,8 @@
 ### v0.5 , Melhoria na geração de chaves , e organização no codigo , otmização na parte de menu , criada uma pasta com nome style para a comunicação do usuario com o programa , e alteração do visual mais facil .
 ### Adição tambem de um arquivo para salvar as chaves encontradas quando ela for encontrada 
 
-![image](https://github.com/user-attachments/assets/8764f071-f2d7-4f46-a63f-97f035e68480)
-
+![image](https://github.com/user-attachments/assets/23453539-af6f-4740-a64f-94e46fe18b76)
+### (No kali_linux o programa rodou com mais +20k de chaves de desempenho carteira 67 Bits.)
 
 # ~ PROX VERSÃO ~
 ## será adicionado mais um metodo de geração de chaves nao será aleatorio , ele vai pegar o range dividir em blocos (de acordo com a qnt que o user escolher) e dai ele vai fazer uma pergunta pro user
