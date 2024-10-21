@@ -2,8 +2,6 @@
 ## Moldado para e5 2680 v4
 ### Kit xeon x99 rs9
 
-![Animation](https://cdn.dribbble.com/users/900374/screenshots/5338161/cpu_mining_2.gif)
-
 ## Notas
 ### V0.3.9 ,Melhoria na temperatuda do processador ,mudança na configuração da bios da x99 
 
